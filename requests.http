@@ -1,0 +1,26 @@
+GET http://localhost:3000/productos HTTP/1.1
+
+### 
+GET http://localhost:3000/productos/2 HTTP/1.1
+
+###
+POST http://localhost:3000/productos HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Vino Liberal",
+        "descripcion": "Un vino inspirador con sabor a libertad y un extasis de vivir a pleno",
+        "precio": 19.99,
+        "imagen": "imagen_vino2.jpg"
+}
+
+###
+PUT http://localhost:3000/productos/3 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Vino Giuliana",
+        "descripcion": "Un vino inspirador con sabor a libertad y un extasis de vivir a pleno",
+        "precio": 59.99,
+        "imagen": "imagen_vino2.jpg"
+}
