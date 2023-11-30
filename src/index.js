@@ -3,10 +3,14 @@ import bodyParser from "body-parser";
 import db from './database.js';
 import path from 'path';
 import productosRoutes from './routes/productos.js';
+import cors from "cors";
+
 
 import {PORT} from './config.js'
 
 const app = express();
+app.use(cors("*"));
+app.disable("x-powered-by");
 app.use(bodyParser.json());
 
 app.set('port', 3000)
